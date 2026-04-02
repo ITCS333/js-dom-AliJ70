@@ -3,8 +3,7 @@
  */
 function changeHeadingText() {
   // TODO: Implement this function
-  const heading=document.querySelector("main-heading");
-  heading.innerText="DOM Manipulation Challange";
+  document.getElementById("main-heading").textContent="DOM Manipulation Challenge";
 }
 
 /**
@@ -12,8 +11,7 @@ function changeHeadingText() {
  */
 function changeBoxColor() {
   // TODO: Implement this function
-  const box=document.querySelector("box-tp-modify");
-  box.style.backgroundColor="lightblue";
+  document.getElementById("box-to-modify").style.background="lightblue";
 }
 
 /**
@@ -21,11 +19,10 @@ function changeBoxColor() {
  */
 function addNewItem() {
   // TODO: Implement this function
-  const ul=document.querySelector("item-list");
-  const li=document.createElement("li");
-  li.textContent="new item";
-  li.classList.add("item");
-  ul.appendChild(li);
+  const newItem= document.createElement("li");
+  newItem.textContent="New Item";
+  newItem.className="item";
+  document.getElementById("item-list").appendChild(newItem);
 }
 
 /**
@@ -33,8 +30,9 @@ function addNewItem() {
  */
 function highlightParagraph() {
   // TODO: Implement this function
-  const paragraph=document.querySelector(".content-para");
-  paragraph.classList.add("highlight");
+  document.querySelector(".content-para").classList.add("highlight");
+  
+ 
 }
 
 /**
@@ -42,8 +40,8 @@ function highlightParagraph() {
  */
 function removeElement() {
   // TODO: Implement this function
-  const element=document.querySelector("to-be-removed");
-  element.remove();
+  document.getElementById("to-be-removed").remove();
+ 
 }
 
 
